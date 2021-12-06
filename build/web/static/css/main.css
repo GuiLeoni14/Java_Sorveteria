@@ -419,6 +419,8 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
 }
 
 .s-sobre {
+    background: url("../img/background2.svg") no-repeat center center;
+    background-size: cover;
 }
 
 .s-sobre .container .main-sobre{
@@ -502,6 +504,48 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
     margin-top: 1rem;
 }
 
+.s-sobe{
+    padding-top: 10rem;
+}
+
+.s-sobe .container .main-sobre{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 8rem;
+    justify-content: space-between;
+}
+
+.s-sobe .container .main-sobre #img-sobre{
+    background-color: #dfaf20;
+}
+
+.s-sobe .container .main-sobre .text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.s-sobe .container .main-sobre .text h2{
+    font-size: 4rem;
+}
+
+.s-sobe .container .main-sobre .text h2 .linha::before{
+    width: 100%;
+    background-color: #dfaf20;
+}
+
+.s-sobe .container .main-sobre .text p{
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-align: justify;
+}
+
+.s-sobe .container .main-sobre #img-acai{
+    transform: rotate(180deg);
+    background-color: #6200ff;
+    width: 100%;
+}
 
 /* Footer */
 /* line 1, ../ajustar footer/scss/main.scss */

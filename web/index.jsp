@@ -54,6 +54,40 @@
             </div>
         </div>
     </section>
+    <section class="s-sobre">
+        <div class="container">
+            <div class="main-sobre">
+                <div class="projeto">
+                    <div class="text">
+                        <h2>Sobre a empresa</h2>
+                        <div class="linha"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsa a vel expedita, laudantium ea qui eum omnis, dignissimos maxime aspernatur, consequatur necessitatibus aut quidem odio quam laborum? Facere, excepturi?</p>
+                    </div>
+                    <div class="img">
+                        <img src="./static/img/art-sorvete2.png" alt="">
+                    </div>
+                </div>
+                <div class="criadores">
+                    <div class="criador">
+                        <img src="./static/img/gui.jpg" alt="">
+                        <h3>Guilherme dos Reis Leoni <div class="linha"></div> </h3>
+                        <ul>
+                            <li>Nome: </li>
+                            <li>Idade: 17 anos.</li>
+                            <li>Cidade: Paraguaçu/MG</li>
+                            <li>Turma: 3° info F</li>
+                        </ul>
+                    </div>
+                    <div class="criador">
+                        <img src="./static/img/gui.jpg" alt="">
+                        <ul>
+                            <li>Nome:</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./static/js/index.js" ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
