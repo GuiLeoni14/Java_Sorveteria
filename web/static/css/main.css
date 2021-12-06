@@ -403,3 +403,329 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
 .buttons-form input:not(:first-child){
     margin-left: 2rem;
 }
+
+
+/* Sobre */
+.linha{
+    position: relative;
+}
+
+.linha::before{
+    content: "";
+    background-color: #6200ff;
+    height: 0.5rem;
+    width: 80%;
+    position: absolute;
+}
+
+.s-sobre {
+}
+
+.s-sobre .container .main-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.s-sobre .container .main-sobre .projeto{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.s-sobre .container .main-sobre .projeto .text{
+    width: 100%;
+    max-width: 40%;
+}
+
+.s-sobre .container .main-sobre .projeto .text h2{
+    padding-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.s-sobre .container .main-sobre .projeto .text p{
+    margin-top: 4rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.s-sobre .container .main-sobre .projeto .img{
+    width: 100%;
+    max-width: 60%;
+}
+
+.s-sobre .container .main-sobre .projeto .img img{
+    width: inherit;
+}
+
+.s-sobre .container .main-sobre .criadores{
+    padding-top: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.s-sobre .container .main-sobre .criadores .criador img{
+    width: 40rem;
+    border-radius: 50%;
+}
+
+.s-sobre .container .main-sobre .criadores .criador h3{
+    text-align: center;
+    font-size: 2.8rem;
+}
+.s-sobre .container .main-sobre .criadores .criador h3 .linha{
+    padding-top: 1rem;
+}
+.s-sobre .container .main-sobre .criadores .criador h3 .linha:before{
+    left:50%; 
+    transform:translate(-50%, -50%);
+}
+.s-sobre .container .main-sobre .criadores .criador h3 .linha:before{
+    width: 10rem;
+}
+
+.s-sobre .container .main-sobre .criadores .criador ul{
+    margin-top: 1rem;
+    background-color: #FFF;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0.2rem 0.2rem 1rem #000;
+}
+
+.s-sobre .container .main-sobre .criadores .criador ul li{
+    font-size: 2rem;
+}
+
+.s-sobre .container .main-sobre .criadores .criador ul li:not(:first-child){
+    margin-top: 1rem;
+}
+
+
+/* Footer */
+/* line 1, ../ajustar footer/scss/main.scss */
+footer {
+    background-color: #673de6;
+    overflow: hidden;
+}
+
+/* line 4, ../ajustar footer/scss/main.scss */
+footer .container {
+    padding: 6.7rem 1.5rem 7.5rem 1.5rem;
+}
+
+/* line 6, ../ajustar footer/scss/main.scss */
+footer .container .main-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* line 10, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 34.4rem;
+}
+
+/* line 17, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato h2 {
+    margin-bottom: 0.6rem;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* line 25, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* line 31, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato form span {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #FFFFFF;
+}
+
+/* line 36, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato form span:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+/* line 39, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato form span:not(:first-child) {
+    margin-top: 2rem;
+}
+
+/* line 43, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato form input, footer .container .main-footer .f-contato form textarea {
+    padding: 0rem 1rem;
+    width: 100%;
+}
+
+/* line 47, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato form input:hover, footer .container .main-footer .f-contato form textarea:hover {
+    background-color: #ccc;
+}
+
+/* line 50, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato form input {
+    height: 3.5rem;
+    border-radius: 0.5rem;
+}
+
+/* line 54, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato form textarea {
+    padding-top: 1rem;
+    resize: none;
+    height: 12.4rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2.8rem;
+}
+
+/* line 62, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-contato a {
+    align-self: center;
+}
+
+/* line 66, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-social {
+    padding-top: 8.2rem;
+}
+
+/* line 68, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-social h4 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #00C2FF;
+    margin-bottom: 2.2rem;
+}
+
+/* line 75, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-social ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* line 81, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-social ul li:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+/* line 84, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-social ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* line 88, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-social ul li a span {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #FFFFFF;
+    margin-left: 1.5rem;
+}
+
+/* line 99, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-links {
+    padding-top: 8.2rem;
+}
+
+/* line 101, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-links h4 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #00C2FF;
+    margin-bottom: 2.2rem;
+}
+
+/* line 108, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-links ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* line 114, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-links ul li:not(:last-child) {
+    margin-bottom: 3.9rem;
+}
+
+/* line 117, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-links ul li a {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #FFFFFF;
+    margin-left: 1.5rem;
+}
+
+/* line 127, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-logo {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* line 133, ../ajustar footer/scss/main.scss */
+footer .container .main-footer .f-logo h2 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: #FFFFFF;
+}
+
+/* line 142, ../ajustar footer/scss/main.scss */
+footer .f-end {
+    width: 100%;
+    padding-bottom: 4.1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* line 149, ../ajustar footer/scss/main.scss */
+footer .f-end::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    max-width: 134.1rem;
+    height: 0.2rem;
+    border-radius: 10rem;
+    background-color: #FFFF;
+}
+
+/* line 159, ../ajustar footer/scss/main.scss */
+footer .f-end span {
+    margin-top: 2.8rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #fff;
+}
+
+  /*# sourceMappingURL=main.css.map */

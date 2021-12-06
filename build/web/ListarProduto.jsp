@@ -10,13 +10,15 @@
     DAOProduto daoProduto = new DAOProduto();
     List<Produto> listaProduto = daoProduto.listar();
 %>
-<table border="1">
+<table border="1" class="fl-table">
     <thead>
         <tr>
-            <th>CÓDIGO</th>
+            <th>Cï¿½DIGO</th>
             <th>PRODUTO</th>
             <th>ESTOQUE</th>
             <th>VALOR</th>
+            <th>ALTERAR</th>
+            <th>EXCLUIR</th>
         </tr>
     </thead>
     <tbody>

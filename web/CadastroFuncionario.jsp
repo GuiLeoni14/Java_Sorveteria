@@ -124,7 +124,7 @@ List<Sorveteria> listaSorveteria = daoSorveteria.listar();
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./static/css/main.css">
-        <title>Cadastro Sorveteria</title>
+        <title>Cadastro Funcionario</title>
     </head>
     <body>
         <%@include file="header.jsp" %>

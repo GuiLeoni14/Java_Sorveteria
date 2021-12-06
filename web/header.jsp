@@ -33,7 +33,7 @@
                 </div>
                 <ul class="ul-main">
                     <li>
-                        <a href="">Home</a>
+                        <a href="/Sorveteria/index.jsp">Home</a>
                     </li>
                     <li>
                         <a href="" id="btnCadastro">Cadastro</a>
