@@ -304,6 +304,9 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
     border-radius: 0.5rem;
 }
 
+.s-cadastro form .btn-cadastrar{
+    margin-top: 2rem;
+}
 .fl-table {
     margin-top: 10rem;
     border-radius: 5px;
@@ -343,4 +346,60 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
 
 .fl-table tr:nth-child(even) {
     background: #F8F8F8;
+}
+.btn-cadastrar{
+    cursor: pointer;
+    border: 1px solid #6200ff;
+    color: #fff;
+    transition: all .3s;
+    background-color: #2d115a;
+}
+
+.btn-cadastrar:hover{
+    background-color: #bbb1e4;
+    color: #2d115a;
+}
+
+.btn-excluir{
+    cursor: pointer;
+    border: 1px solid #ff2600 !important;
+    color: #fff;
+    transition: all .3s;
+    background-color: #ff2600;
+}
+
+.btn-excluir:hover{
+    background-color: #ec7b67;
+}
+
+.btn-cancelar{
+    cursor: pointer;
+    border: 1px solid #0f26f3 !important;
+    color: #fff;
+    transition: all .3s;
+    background-color: #0f26f3;
+}
+
+.btn-cancelar:hover{
+    background-color: #6976f0;
+}
+
+.buttons-form{
+    margin-top: 2rem;
+    display: flex;
+}
+
+.btn-alterar{
+    cursor: pointer;
+    border: 1px solid #05851a !important;
+    color: #fff;
+    transition: all .3s;
+    background-color: #05851a;
+}
+
+.btn-alterar:hover{
+    background-color: #74c982;
+}
+.buttons-form input:not(:first-child){
+    margin-left: 2rem;
 }

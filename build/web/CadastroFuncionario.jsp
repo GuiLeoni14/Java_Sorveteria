@@ -17,7 +17,7 @@
             }else if (document.cadastro.nomeFuncionario.value == '') {
                 document.cadastro.mensagem.value = 'Preencha o campo Funcionario';
             } else if (document.cadastro.enderecoFuncionario.value == '') {
-                document.cadastro.mensagem.value = 'Preencha o campo Endereço';
+                document.cadastro.mensagem.value = 'Preencha o campo Endereï¿½o';
             } else if (document.cadastro.emailFuncionario.value == '') {
                 document.cadastro.mensagem.value = 'Preencha o campo Email';
             } else if (document.cadastro.telefoneFuncionario.value == '') {
@@ -62,7 +62,7 @@
             }else if (document.cadastro.nomeFuncionario.value == '') {
                 document.cadastro.mensagem.value = 'Preencha o campo Funcionario';
             } else if (document.cadastro.enderecoFuncionario.value == '') {
-                document.cadastro.mensagem.value = 'Preencha o campo Endereço';
+                document.cadastro.mensagem.value = 'Preencha o campo Endereï¿½o';
             } else if (document.cadastro.emailFuncionario.value == '') {
                 document.cadastro.mensagem.value = 'Preencha o campo Email';
             } else if (document.cadastro.telefoneFuncionario.value == '') {
@@ -117,51 +117,66 @@ List<Sorveteria> listaSorveteria = daoSorveteria.listar();
 <html> 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=Latin1">
-        <title>Cadastro Funcionário</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./static/css/main.css">
+        <title>Cadastro Sorveteria</title>
     </head>
     <body>
-        <h1>Cadastro Funcionário</h1>
-        <form name="cadastro" >
-            <p>  <label>Sorveteria: </label>
-            <select name="codSorveteria">
-                <% for (Sorveteria sorveteria:listaSorveteria){%>
-                <% if(codSorveteria.equals(String.valueOf(sorveteria.getCodSorveteria()))){%>                                  
-                <option selected value="<%= sorveteria.getCodSorveteria()%>"><%= sorveteria.getNomeSorveteria()%></option>
-                <%}else{%>
-                <option value="<%= sorveteria.getCodSorveteria()%>"><%= sorveteria.getNomeSorveteria()%></option>
-                <%}%>
-                <%}%>
-            </select>
-            </p>
-            <p>  <label>Cargo: </label>    <input type="text" name="tipoFuncionario" value="<%= (tipoFuncionario==null)?"":tipoFuncionario %>" size="50" /></p>
-            <p>  <label>Funcionario: </label>    <input type="text" name="nomeFuncionario" value="<%= (nomeFuncionario==null)?"":nomeFuncionario %>" size="50" /></p>
-            <p>  <label>Endereço: </label>    <input type="text" name="enderecoFuncionario" value="<%= (enderecoFuncionario==null)?"":enderecoFuncionario %>" size="50" /></p>            
-            <p>  <label>Email: </label>    <input type="text" name="emailFuncionario" value="<%= (emailFuncionario==null)?"":emailFuncionario %>" size="50" /></p>
-            <p>  <label>Telefone: </label>    <input type="text" name="telefoneFuncionario" value="<%= (telefoneFuncionario==null)?"":telefoneFuncionario %>" size="50" /></p>
-            <p>  <label>CPF: </label>    <input type="text" name="cpfFuncionario" value="<%= (cpfFuncionario==null)?"":cpfFuncionario %>" size="50" /></p>
-            <p>  <label>Data de Nascimento: </label>    <input type="text" name="dataNascimentoFuncionario" value="<%= (dataNascimentoFuncionario==null)?"":dataNascimentoFuncionario %>" size="50" /></p>
-            <p>  <label>RG: </label>    <input type="text" name="rgFuncionario" value="<%= (rgFuncionario==null)?"":rgFuncionario %>" size="50" /></p>
-            <p>  <label>Carga Horaria: </label>    <input type="text" name="cargaHorariaFuncionario" value="<%= (cargaHorariaFuncionario==null)?"":cargaHorariaFuncionario %>" size="50" /></p>
-            <p>  <label>Salario: </label>    <input type="text" name="salarioFuncionario" value="<%= (salarioFuncionario==null)?"":salarioFuncionario %>" size="50" /></p>
-            <% if(opcao.equals("cadastrar")){ %>
-            <input type="button" value="Cadastrar" name="cadastrar" onclick="enviar('cadastrar')" />
-            <%}%>
-            <% if(opcao.equals("alterar")){ %>
-            <input type="button" value="Alterar" name="alterar" onclick="enviar('alterar')" />
-            <input type="button" value="Cancelar" name="cancelar" onclick="enviar('cancelar')" />
-            <%}%>
-            <% if(opcao.equals("excluir")){ %>
-            <input type="button" value="Excluir" name="excluir" onclick="enviar('excluir')" />
-            <input type="button" value="Cancelar" name="cancelar" onclick="enviar('cancelar')" />
-            <%}%>
-            <input type="hidden" name="opcao" value="<%= opcao %>"/>
-            <input type="hidden" name="codFuncionario" value="<%= codFuncionario %>"/>
-            <br><br>
-            <textarea name="mensagem" rows="2" cols="100" readonly="readonly">
-        <%= (mensagem==null)?"":mensagem %>
-        </textarea>
-        </form>
-        <br>
-        <%@include file="ListarFuncionario.jsp" %>
+        <%@include file="header.jsp" %>
+        <section class="s-cadastro">
+            <div class="container">
+                <h1>Cadastro Funcionï¿½rio</h1>
+                <form name="cadastro" >
+                    <p>  <label>Sorveteria: </label>
+                    <select name="codSorveteria">
+                        <% for (Sorveteria sorveteria:listaSorveteria){%>
+                        <% if(codSorveteria.equals(String.valueOf(sorveteria.getCodSorveteria()))){%>                                  
+                        <option selected value="<%= sorveteria.getCodSorveteria()%>"><%= sorveteria.getNomeSorveteria()%></option>
+                        <%}else{%>
+                        <option value="<%= sorveteria.getCodSorveteria()%>"><%= sorveteria.getNomeSorveteria()%></option>
+                        <%}%>
+                        <%}%>
+                    </select>
+                    </p>
+                    <p>  <label>Cargo: </label>    <input type="text" name="tipoFuncionario" value="<%= (tipoFuncionario==null)?"":tipoFuncionario %>" size="50" /></p>
+                    <p>  <label>Funcionario: </label>    <input type="text" name="nomeFuncionario" value="<%= (nomeFuncionario==null)?"":nomeFuncionario %>" size="50" /></p>
+                    <p>  <label>Endereï¿½o: </label>    <input type="text" name="enderecoFuncionario" value="<%= (enderecoFuncionario==null)?"":enderecoFuncionario %>" size="50" /></p>            
+                    <p>  <label>Email: </label>    <input type="text" name="emailFuncionario" value="<%= (emailFuncionario==null)?"":emailFuncionario %>" size="50" /></p>
+                    <p>  <label>Telefone: </label>    <input type="text" name="telefoneFuncionario" value="<%= (telefoneFuncionario==null)?"":telefoneFuncionario %>" size="50" /></p>
+                    <p>  <label>CPF: </label>    <input type="text" name="cpfFuncionario" value="<%= (cpfFuncionario==null)?"":cpfFuncionario %>" size="50" /></p>
+                    <p>  <label>Data de Nascimento: </label>    <input type="text" name="dataNascimentoFuncionario" value="<%= (dataNascimentoFuncionario==null)?"":dataNascimentoFuncionario %>" size="50" /></p>
+                    <p>  <label>RG: </label>    <input type="text" name="rgFuncionario" value="<%= (rgFuncionario==null)?"":rgFuncionario %>" size="50" /></p>
+                    <p>  <label>Carga Horaria: </label>    <input type="text" name="cargaHorariaFuncionario" value="<%= (cargaHorariaFuncionario==null)?"":cargaHorariaFuncionario %>" size="50" /></p>
+                    <p>  <label>Salario: </label>    <input type="text" name="salarioFuncionario" value="<%= (salarioFuncionario==null)?"":salarioFuncionario %>" size="50" /></p>
+                    <div class="buttons-form">
+                        <% if(opcao.equals("cadastrar")){ %>
+                        <input type="button" class="btn-cadastrar" value="Cadastrar" name="cadastrar" onclick="enviar('cadastrar')" />
+                        <%}%>
+                        <% if(opcao.equals("alterar")){ %>
+                        <input type="button" value="Alterar" class="btn-alterar" name="alterar" onclick="enviar('alterar')" />
+                        <input type="button" class="btn-cancelar" value="Cancelar" name="cancelar" onclick="enviar('cancelar')" />
+                        <%}%>
+                        <% if(opcao.equals("excluir")){ %>
+                        <input type="button" value="Excluir" class="btn-excluir" name="excluir" onclick="enviar('excluir')" />
+                        <input type="button" value="Cancelar" class="btn-cancelar" name="cancelar" onclick="enviar('cancelar')" />
+                        <%}%>
+                    </div>
+                    <input type="hidden" name="opcao" value="<%= opcao %>"/>
+                    <input type="hidden" name="codFuncionario" value="<%= codFuncionario %>"/>
+                    <br><br>
+                    <textarea name="mensagem" rows="2" cols="100" readonly="readonly">
+                <%= (mensagem==null)?"":mensagem %>
+                </textarea>
+                </form>        
+                <br>
+                <%@include file="ListarFuncionario.jsp" %>        
+            </div>
+        </section>
+        <script src="./static/js/index.js" ></script>
     </body>
 </html>

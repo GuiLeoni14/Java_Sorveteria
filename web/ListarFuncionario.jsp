@@ -12,14 +12,14 @@
     List<Funcionario> listaFuncionario = daoFuncionario.listar();
     ConverteData converte = new ConverteData();
 %>
-<table border="1">
+<table border="1" class="fl-table">
     <thead>
         <tr>
-            <th>CÓDIGO</th>
+            <th>Cï¿½DIGO</th>
             <th>SORVETERIA</th>
             <th>CARGO</th>
             <th>FUNCIONARIO</th>
-            <th>ENDEREÇO</th>
+            <th>ENDEREï¿½O</th>
             <th>EMAIL</th>
             <th>TELEFONE</th>
             <th>CPF</th>

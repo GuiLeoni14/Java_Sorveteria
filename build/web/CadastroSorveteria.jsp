@@ -99,17 +99,19 @@
                     <p>  <label>Hor�rio de Fucionamento: </label>    <input type="text" name="horarioFuncionamentoSorveteria" value="<%= (horarioFuncionamentoSorveteria==null)?"":horarioFuncionamentoSorveteria %>" size="50" /></p>
                     <p>  <label>Email: </label>    <input type="text" name="emailSorveteria" value="<%= (emailSorveteria==null)?"":emailSorveteria %>" size="50" /></p>
                     <p>  <label>Telefone: </label>    <input type="text" name="telefoneSorveteria" value="<%= (telefoneSorveteria==null)?"":telefoneSorveteria %>" size="50" /></p>
-                    <% if(opcao.equals("cadastrar")){ %>
-                    <input type="button" value="Cadastrar" name="cadastrar" onclick="enviar('cadastrar')" />
-                    <%}%>
-                    <% if(opcao.equals("alterar")){ %>
-                    <input type="button" value="Alterar" name="alterar" onclick="enviar('alterar')" />
-                    <input type="button" value="Cancelar" name="cancelar" onclick="enviar('cancelar')" />
-                    <%}%>
-                    <% if(opcao.equals("excluir")){ %>
-                    <input type="button" value="Excluir" name="excluir" onclick="enviar('excluir')" />
-                    <input type="button" value="Cancelar" name="cancelar" onclick="enviar('cancelar')" />
-                    <%}%>
+                                        <div class="buttons-form">
+                        <% if(opcao.equals("cadastrar")){ %>
+                        <input type="button" class="btn-cadastrar" value="Cadastrar" name="cadastrar" onclick="enviar('cadastrar')" />
+                        <%}%>
+                        <% if(opcao.equals("alterar")){ %>
+                        <input type="button" value="Alterar" class="btn-alterar" name="alterar" onclick="enviar('alterar')" />
+                        <input type="button" class="btn-cancelar" value="Cancelar" name="cancelar" onclick="enviar('cancelar')" />
+                        <%}%>
+                        <% if(opcao.equals("excluir")){ %>
+                        <input type="button" value="Excluir" class="btn-excluir" name="excluir" onclick="enviar('excluir')" />
+                        <input type="button" value="Cancelar" class="btn-cancelar" name="cancelar" onclick="enviar('cancelar')" />
+                        <%}%>
+                    </div>
                     <input type="hidden" name="opcao" value="<%= opcao %>"/>
                     <input type="hidden" name="codSorveteria" value="<%= codSorveteria %>"/>
                     <br><br>
