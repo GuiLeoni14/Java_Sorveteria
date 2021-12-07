@@ -4,44 +4,76 @@
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<queryString>
-		<![CDATA[SELECT funcionario.codFuncionario,  funcionario.nomeFuncionario, funcionario.salarioFuncionario, sorveteria.nomeSorveteria FROM funcionario, sorveteria WHERE funcionario.codSorveteria = sorveteria.codSorveteria]]>
+		<![CDATA[SELECT funcionario.codFuncionario, funcionario.nomeFuncionario, funcionario.tipoFuncionario, funcionario.salarioFuncionario FROM funcionario, sorveteria WHERE funcionario.codSorveteria = sorveteria.codSorveteria]]>
 	</queryString>
 	<field name="codFuncionario" class="java.lang.Integer"/>
 	<field name="nomeFuncionario" class="java.lang.String"/>
+	<field name="tipoFuncionario" class="java.lang.String"/>
 	<field name="salarioFuncionario" class="java.lang.Double"/>
-	<field name="nomeSorveteria" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch"/>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="206" y="34" width="144" height="20"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Relatório Funcionario]]></text>
+			</staticText>
+		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch">
-			<textField>
-				<reportElement x="238" y="0" width="100" height="20"/>
+		<band height="33" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20"/>
 				<textElement/>
-				<textFieldExpression><![CDATA[$F{salarioFuncionario}]]></textFieldExpression>
+				<text><![CDATA[CÓDIGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="143" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[NOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="273" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[FUNÇÃO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="395" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[SALÁRIO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="11" width="111" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{codFuncionario}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="361" y="0" width="100" height="20"/>
-				<textElement/>
-				<textFieldExpression><![CDATA[$F{nomeSorveteria}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="116" y="0" width="100" height="20"/>
+				<reportElement x="143" y="11" width="110" height="20"/>
 				<textElement/>
 				<textFieldExpression><![CDATA[$F{nomeFuncionario}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="0" width="100" height="20"/>
+				<reportElement x="273" y="11" width="100" height="20"/>
 				<textElement/>
-				<textFieldExpression><![CDATA[$F{codFuncionario}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{tipoFuncionario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="395" y="11" width="115" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{salarioFuncionario}]]></textFieldExpression>
 			</textField>
 		</band>
-	</pageHeader>
-	<detail>
-		<band height="125" splitType="Stretch"/>
 	</detail>
 	<columnFooter>
 		<band height="45" splitType="Stretch"/>

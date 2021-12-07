@@ -38,6 +38,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2021;
     transition: all .3s;
 }
 
@@ -81,7 +82,7 @@ header .container nav .ul-main li a{
 }
 
 header .container nav .ul-main li a:hover{
-    color: var(--text-color-primary);
+    color: #dfaf20;
 }
 
 header .container nav .ul-main #btnCadastro{
@@ -92,7 +93,8 @@ header .container nav .ul-main li:not(:first-child){
 }
 
 .fixed-menu{
-    background-color: #673de6;
+    background-color: #431386;
+    box-shadow: -0.5rem 0.5rem 1rem #000;
 }
 /* header .container nav .ul-main .ul-cadastros{
     display: none;
@@ -125,8 +127,8 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
     position: absolute;
     top: 8rem;
     width: 100%;
-    max-width: 37.3rem;
-    background: linear-gradient(180deg, #6958af 0%, #6200ff 100%);
+    max-width: 34rem;
+    background-color: #dfaf20;
     border-radius: 6px;
     padding: 4rem;
     z-index: 1;
@@ -155,7 +157,7 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
     font-weight: 600;
     font-size: 1.6rem;
     list-style: 1.9rem;
-    color: #fff;
+    color: #0d0d0d;
     display: block;
     margin-bottom: 4px;
     transition: color .3s;
@@ -164,6 +166,29 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
     color: #fff;
     font-size: 1.4rem;
     line-height: 150%;
+}
+.dropdown-relatorio{
+    position: absolute;
+    top: 8rem;
+    left:50%; 
+    transform:translate(-50%, -50%);
+    width: 100%;
+    max-width: 37.3rem;
+    background-color: #dfaf20;
+    border-radius: 6px;
+    padding: 4rem;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+    transform: translateY(20px);
+    box-shadow: -10px 10px 10px #333;
+}    
+.dropdown-relatorio.active{
+    opacity: 1;
+    z-index: 2022;
+    pointer-events: all;
+    transform: translateY(0px);
 }
 
 
@@ -252,6 +277,7 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
 }
 .s-cadastro h1{
     font-size: 4rem;
+    color: #fff;
     text-align: center;
 }
 .s-cadastro form{
@@ -520,7 +546,6 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
 
 .s-sobe{
     padding-top: 10rem;
-    background-color: rgb(225, 217, 245);
 }
 
 /* .s-sobe .container .main-sobre{
@@ -639,6 +664,35 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
     margin-top: 0.5rem;
     text-align: center;
     font-size: 1.3rem;
+}
+
+.s-contato{
+    background-color: #6200ff;
+}
+
+.s-contato .container{
+    display: flex;
+    align-items: center;
+
+}
+
+.s-contato .container img{
+    height: 60rem;
+}
+.s-contato .container .text{
+    width: 100%;
+}
+.s-contato .container .text h2{
+    font-size: 6rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.s-contato .container .text h2{
+    align-self: flex-end;
+}
+.s-contato .container .text .btn-primary{
+    
 }
 /* Footer */
 /* line 1, ../ajustar footer/scss/main.scss */

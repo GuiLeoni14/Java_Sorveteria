@@ -54,40 +54,60 @@
             </div>
         </div>
     </section>
-    <section class="s-sobre">
+    <section class="s-sobe">
         <div class="container">
             <div class="main-sobre">
-                <div class="projeto">
+                <div class="left">
+                    <img src="./static/img/art-sorvete3.png" id="img-sobre" alt="">
                     <div class="text">
-                        <h2>Sobre a empresa</h2>
-                        <div class="linha"></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsa a vel expedita, laudantium ea qui eum omnis, dignissimos maxime aspernatur, consequatur necessitatibus aut quidem odio quam laborum? Facere, excepturi?</p>
-                    </div>
-                    <div class="img">
-                        <img src="./static/img/art-sorvete2.png" alt="">
+                        <h2>Sobre a empresa <div class="linha"></div></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nobis libero sequi, vero laboriosam iure illo, cupiditate ipsam, animi fugiat itaque recusandae earum perspiciatis omnis quis dicta totam iste consequatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet minima velit veritatis voluptates deleniti ipsam laudantium labore at. Et itaque nobis ab explicabo, atque molestiae eveniet cumque doloribus asperiores tempore.
+                        </p>
+                        <a href="#" class="btn-primary">Saiba mais</a>
                     </div>
                 </div>
-                <div class="criadores">
-                    <div class="criador">
-                        <img src="./static/img/gui.jpg" alt="">
-                        <h3>Guilherme dos Reis Leoni <div class="linha"></div> </h3>
-                        <ul>
-                            <li>Nome: </li>
-                            <li>Idade: 17 anos.</li>
-                            <li>Cidade: Paraguaçu/MG</li>
-                            <li>Turma: 3° info F</li>
-                        </ul>
-                    </div>
-                    <div class="criador">
-                        <img src="./static/img/gui.jpg" alt="">
-                        <ul>
-                            <li>Nome:</li>
-                        </ul>
+                <div class="right">
+                    <img src="./static/img/acai-art.png" id="img-acai" alt="">
+                    <div class="text">
+                        <div class="card">
+                            <img src="./static/img/sorvete-footer.png" alt="">
+                            <div class="text-card">
+                                <h4>Qualidade </h4>
+                                <div class="linha"></div>
+                                <p>Qualidade garantida em toda a nossa linha de produtos.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./static/img/art-sorvete4.png" alt="">
+                            <div class="text-card">
+                                <h4>Variedade </h4>
+                                <div class="linha"></div>
+                                <p>Temos todas os sabores imagináveis, para todos os gostos.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./static/img/acai.png" alt="">
+                            <div class="text-card">
+                                <h4>Preço</h4>
+                                <div class="linha"></div>
+                                <p>Os melhores preços da região, sempre priorizando a qualidade e custo benefício</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./static/img/tigela-acai.png" alt="">
+                            <div class="text-card">
+                                <h4>Sabor</h4>
+                                <div class="linha"></div>
+                                <p>Os melhores sabores de todos os gostos possíveis, com a melhor qualidade.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <%@include file="footer.jsp" %>
     <script src="./static/js/index.js" ></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>

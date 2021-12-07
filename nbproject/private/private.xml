@@ -3,15 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/src/java/modelo/DAOItensVenda.java</file>
-            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/src/java/modelo/DAOProduto.java</file>
-            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/CadastroProduto.jsp</file>
             <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/header.jsp</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/RelatorioFuncionario.jsp</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/relatorios/RelatorioFuncionario.jrxml</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/RelatorioCliente.jsp</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/footer.jsp</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/RelatorioCompra.jsp</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/Mensagem.jsp</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/RelatorioProduto.jsp</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/src/java/modelo/Relatorio.java</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/src/java/modelo/Produto.java</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/RelatorioVenda.jsp</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/relatorios/RelatorioVenda.jrxml</file>
             <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/index.jsp</file>
-            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/CRUDVendaProduto.jsp</file>
-            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/static/css/main.css</file>
-            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/CadastroSorveteria.jsp</file>
-            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/CadastroFuncionario.jsp</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/RelatorioFornecedor.jsp</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/relatorios/RelatorioCliente.jrxml</file>
+            <file>file:/C:/Users/user/Documents/Escola/Desenvolvimento%20para%20WEB/Sorveteria/web/relatorios/RelatorioCompra.jrxml</file>
         </group>
     </open-files>
 </project-private>

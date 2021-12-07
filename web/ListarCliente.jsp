@@ -10,12 +10,12 @@
     DAOCliente daoCliente = new DAOCliente();
     List<Cliente> listaCliente = daoCliente.listar();
 %>
-<table border="1">
+<table border="1" class="fl-table">
     <thead>
         <tr>
-            <th>CÓDIGO</th>
+            <th>Cï¿½DIGO</th>
             <th>CLIENTE</th>
-            <th>ENDEREÇO</th>
+            <th>ENDEREï¿½O</th>
             <th>EMAIL</th>
             <th>TELEFONE</th>
             <th>CPF</th>
