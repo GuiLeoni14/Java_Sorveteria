@@ -132,7 +132,7 @@ List<Sorveteria> listaSorveteria = daoSorveteria.listar();
             <div class="container">
                 <h1>Cadastro Funcion�rio</h1>
                 <form name="cadastro" >
-                    <p>  <label>Sorveteria: </label>
+                    <p class="p-select">  <label>Sorveteria: </label>
                     <select name="codSorveteria">
                         <% for (Sorveteria sorveteria:listaSorveteria){%>
                         <% if(codSorveteria.equals(String.valueOf(sorveteria.getCodSorveteria()))){%>                                  
@@ -177,6 +177,7 @@ List<Sorveteria> listaSorveteria = daoSorveteria.listar();
                 <%@include file="ListarFuncionario.jsp" %>        
             </div>
         </section>
-        <script src="./static/js/index.js" ></script>
+        <%@include file="footer.jsp" %>  
     </body>
+    <script src="./static/js/index.js" ></script>
 </html>

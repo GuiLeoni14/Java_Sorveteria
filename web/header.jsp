@@ -9,63 +9,75 @@
                     <div class="item">
                         <a href="/Sorveteria/CadastroSorveteria.jsp">
                         <strong>Sorveteria</strong>
-                        <p>P�gina de cadastro da sorveteria</p>
+                        <p>Pagina de cadastro da sorveteria</p>
                         </a>
                     </div>
                     <div class="item">
                         <a href="/Sorveteria/CadastroFuncionario.jsp">
-                        <strong>Funcion�rio</strong>
-                        <p>P�gina de cadastro da Funcionário</p>
+                        <strong>Funcionario</strong>
+                        <p>Pagina de cadastro da Funcionario</p>
                         </a>
                     </div>
                     <div class="item">
                         <a href="/Sorveteria/CadastroProduto.jsp">
                         <strong>Produtos</strong>
-                        <p>P�gina de cadastro da Produtos</p>
+                        <p>Pagina de cadastro da Produtos</p>
                         </a>
                     </div>
                     <div class="item">
                         <a href="/Sorveteria/CadastroCliente.jsp">
                         <strong>Clientes</strong>
-                        <p>P�gina de cadastro da Clientes</p>
+                        <p>Pagina de cadastro da Clientes</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/Sorveteria/CadastroCompraProduto.jsp">
+                        <strong>Compras</strong>
+                        <p>Pagina de cadastro das Compras</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="/Sorveteria/CadastroVendaProduto.jsp">
+                        <strong>Vendas</strong>
+                        <p>Pagina de cadastro das Vendas</p>
                         </a>
                     </div>
                 </div>
                 <div class="dropdown-relatorio js-dropdown-relatorio">
                     <div class="item">
-                        <a href="RelatorioFuncionario.jsp">
-                        <strong>Funcionário</strong>
-                        <p>Relatório de Funcionário</p>
+                        <a href="RelatorioFuncionario.jsp" target="_blank">
+                        <strong>Funcionario</strong>
+                        <p>Relatorio de Funcionario</p>
                         </a>
                     </div>
                     <div class="item">
-                        <a href="/Sorveteria/CadastroProduto.jsp">
-                        <strong>Relatório Produtos</strong>
-                        <p>Relatório de Produtos</p>
+                        <a href="/Sorveteria/CadastroProduto.jsp" target="_blank">
+                        <strong>Relatorio Produtos</strong>
+                        <p>Relatorio de Produtos</p>
                         </a>
                     </div>
                     <div class="item">
-                        <a href="/Sorveteria/RelatorioCliente.jsp">
-                        <strong>Relatório Clientes</strong>
-                        <p>Relatório de Clientes</p>
+                        <a href="/Sorveteria/RelatorioCliente.jsp" target="_blank">
+                        <strong>Relatorio Clientes</strong>
+                        <p>Relatorio de Clientes</p>
                         </a>
                     </div>
                     <div class="item">
-                        <a href="/Sorveteria/RelatorioFornecedor.jsp">
-                        <strong>Relatório Fornecedores</strong>
-                        <p>Relatório de Fornecedores</p>
+                        <a href="/Sorveteria/RelatorioFornecedor.jsp" target="_blank">
+                        <strong>Relatorio Fornecedores</strong>
+                        <p>Relatorio de Fornecedores</p>
                         </a>
                     </div>
                     <div class="item">
-                        <a href="/Sorveteria/RelatorioCompra.jsp">
-                        <strong>Relatório Compras</strong>
-                        <p>Relatório de Compras</p>
+                        <a href="/Sorveteria/RelatorioCompra.jsp" target="_blank">
+                        <strong>Relatorio Compras</strong>
+                        <p>Relatorio de Compras</p>
                         </a>
                     </div>
                     <div class="item">
-                        <a href="/Sorveteria/RelatorioVenda.jsp">
-                        <strong>Relatório Vendas</strong>
-                        <p>Relatório de Vendas</p>
+                        <a href="/Sorveteria/RelatorioVenda.jsp" target="_blank">
+                        <strong>Relatorio Vendas</strong>
+                        <p>Relatorio de Vendas</p>
                         </a>
                     </div>
                 </div>
@@ -77,13 +89,13 @@
                         <a href="" id="btnCadastro">Cadastro</a>
                     </li>
                     <li>
-                        <a href="" id="btnRelatorio">Relat�rio</a>
+                        <a href="" id="btnRelatorio">Relatorio</a>
                     </li>
                     <li>
-                        <a href="">Contato</a>
+                        <a href="#contato">Contato</a>
                     </li>
                     <li>
-                        <a href="">Sobre</a>
+                        <a href="#sobre">Sobre</a>
                     </li>
                 </ul>
                 <a href="" class="btn btn-primary">login</a>

@@ -1,4 +1,4 @@
-<footer>
+<footer id="contato">
     <div class="container" id="contato">
         <div class="main-footer">
             <div class="f-contato">
@@ -17,23 +17,23 @@
                 <h4>Redes sociais</h4>
                 <ul>
                     <li><a href="#">
-                        <img src="./img/icon-twitter.svg" alt="">
+                        <img src="./static/img/icon-twitter.svg" alt="">
                         <span>Twitter</span>
                     </a></li>
                     <li><a href="#">
-                        <img src="./img/icon-linkedin.svg" alt="">
+                        <img src="./static/img/icon-linkedin.svg" alt="">
                         <span>LinkedIn</span>
                     </a></li>
                     <li><a href="#">
-                        <img src="./img/icon-instagram.svg" alt="">
+                        <img src="./static/img/icon-instagram.svg" alt="">
                         <span>Instagram</span>
                     </a></li>
                     <li><a href="#">
-                        <img src="./img/icon-facebook.svg" alt="">
+                        <img src="./static/img/icon-facebook.svg" alt="">
                         <span>Facebook</span>
                     </a></li>
                     <li><a href="#">
-                        <img src="./img/icon-gmail.svg" alt="">
+                        <img src="./static/img/icon-gmail.svg" alt="">
                         <span>G-mail</span>
                     </a></li>
                 </ul>
@@ -41,10 +41,10 @@
             <div class="f-links">
                 <h4>Nossos links</h4>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre nós</a></li>
-                    <li><a href="">Contato</a></li>
-                    <li><a href="">Login</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Login</a></li>
                 </ul>
             </div>
             <div class="f-logo">
@@ -53,6 +53,6 @@
         </div>
     </div>
     <div class="f-end">
-        <span>© 2021 Copyright</span>
+        <span>Desenvolvido por Guilherme Leoni(@guileoni14) - Alexandre Bueno(@ale_buenof)</span>
     </div>
 </footer>

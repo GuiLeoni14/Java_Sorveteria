@@ -13,14 +13,14 @@
 <table border="1" class="fl-table">
     <thead>
         <tr>
-            <th>C�DIGO</th>
+            <th>CODIGO</th>
             <th>CLIENTE</th>
-            <th>ENDERE�O</th>
+            <th>ENDERECO</th>
             <th>EMAIL</th>
             <th>TELEFONE</th>
             <th>CPF</th>
             <th>DATA DE NASCIMENTO</th>
-            <th>RG</th>
+            <%-- <th>RG</th> --%>
             <th>ALTERAR</th>
             <th>EXCLUIR</th>
         </tr>
@@ -35,7 +35,7 @@
             <td><%= cliente.getTelefoneCliente() %></td>
             <td><%= cliente.getCpfCliente() %></td>
             <td><%= cliente.getDataNascimentoCliente() %></td>
-            <td><%= cliente.getRgCliente() %></td>
+            <%-- <td><%= cliente.getRgCliente() %></td> --%>
             <td><a href="CadastroCliente.jsp?opcao=alterar&codCliente=<%= cliente.getCodCliente()%>&nomeCliente=<%= cliente.getNomeCliente()%>&enderecoCliente=<%= cliente.getEnderecoCliente()%>&emailCliente=<%= cliente.getEmailCliente()%>&telefoneCliente=<%= cliente.getTelefoneCliente()%>&cpfCliente=<%= cliente.getCpfCliente()%>&dataNascimentoCliente=<%= cliente.getDataNascimentoCliente()%>&rgCliente=<%= cliente.getRgCliente()%>">alterar</a></td>
             <td><a href="CadastroCliente.jsp?opcao=excluir&codCliente=<%= cliente.getCodCliente()%>&nomeCliente=<%= cliente.getNomeCliente()%>&enderecoCliente=<%= cliente.getEnderecoCliente()%>&emailCliente=<%= cliente.getEmailCliente()%>&telefoneCliente=<%= cliente.getTelefoneCliente()%>&cpfCliente=<%= cliente.getCpfCliente()%>&dataNascimentoCliente=<%= cliente.getDataNascimentoCliente()%>&rgCliente=<%= cliente.getRgCliente()%>">exluir</a></td>
         </tr>

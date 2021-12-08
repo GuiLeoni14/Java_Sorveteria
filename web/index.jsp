@@ -14,12 +14,12 @@
 </head>
 <body>
     <%@include file="header.jsp" %>
-    <section class="s-home">
+    <section class="s-home" id="home">
         <div class="container">
             <div class="main-home">
                 <div class="text-home">
                     <h2>Barato, bonito e gostoso!</h2>
-                    <h1>Delicioso, como você imagina...</h1>
+                    <h1>Delicioso, como voce imagina...</h1>
                     <div class="slide-sorvetes">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -54,7 +54,7 @@
             </div>
         </div>
     </section>
-    <section class="s-sobe">
+    <section class="s-sobe" id="sobre">
         <div class="container">
             <div class="main-sobre">
                 <div class="left">

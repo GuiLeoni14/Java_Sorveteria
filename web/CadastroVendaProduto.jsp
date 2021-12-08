@@ -100,90 +100,96 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>CAIXA</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=Latin1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;800&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./static/css/main.css">
+        <title>Cadastro Produto</title>
     </head>
     <body>
-        <h1>CAIXA Nº VENDA: <%= codVenda%> - <%= CodCliente%></h1>
-        <form name="cadastro">
+        <%@include file="header.jsp" %>
+        <section class="s-cadastro">
+            <div class="container">
+                <h1>CAIXA VENDA: <%= codVenda%> - <%= CodCliente%></h1>
+                <form name="cadastro" class="form-compra">
 
-            <p>  <label> Cliente:</label> 
-                <select name="codCliente">
-                    <% for (Cliente lista : listaCliente) { %>
-                    <% if (CodCliente.equals(String.valueOf(lista.getCodCliente()))) {%>
-                    <option selected value="<%= lista.getCodCliente()%>"><%= lista.getNomeCliente()%></option>
-                    <%} else {%>
-                    <option  value="<%= lista.getCodCliente()%>"><%= lista.getNomeCliente()%></option>
-                    <% }%>
-                    <% }%>
-                </select></p>
-                 
-                <p>  <label> Funcionario:</label> 
-                <select name="codFuncionario">
-                    <% for (Funcionario lista : listaFuncionario) { %>
-                    <% if (CodFuncionario.equals(String.valueOf(lista.getCodFuncionario()))) {%>
-                    <option selected value="<%= lista.getCodFuncionario()%>"><%= lista.getNomeFuncionario()%></option>
-                    <%} else {%>
-                    <option  value="<%= lista.getCodFuncionario()%>"><%= lista.getNomeFuncionario()%></option>
-                    <% }%>
-                    <% }%>
-                </select></p>
-
-            <p>  <label> Data:</label>   <input type="text" name="dataVendaProduto" value="<%= (dataVendaProduto == null) ? "" : dataVendaProduto%>" size="10" /></p>
-            
-                <% if (!codVenda.equals("0")) { %>
-            <table border="0" cellspacing="3" cellpadding="3">
-                <tr>
-                    <td>
-                        <p>  <label> Lista de Produtos:</label> <br>
-                            <select name="codProduto" size="10">
-                                <% for (Produto lista : listaProduto) {%>
-                                <option  value="<%= lista.getCodProduto()%>"><%= lista.getNomeProduto()%> R$: <%= lista.getValorProduto()%></option>
-                                <% } %>
-                            </select></p>
-                    </td>
-                    <td>
-                        Quant.<br>
-                        <input type="text" name="quantidadeVenda" value="1"  size="2" /><br><br>
+                    <p class="p-select">  <label> Cliente:</label> 
+                        <select name="codCliente">
+                            <% for (Cliente lista : listaCliente) { %>
+                            <% if (CodCliente.equals(String.valueOf(lista.getCodCliente()))) {%>
+                            <option selected value="<%= lista.getCodCliente()%>"><%= lista.getNomeCliente()%></option>
+                            <%} else {%>
+                            <option  value="<%= lista.getCodCliente()%>"><%= lista.getNomeCliente()%></option>
+                            <% }%>
+                            <% }%>
+                        </select></p>
                         
-                        <input type="button" value="Vender" name="vender" onclick="enviar('vender')" />
-                    </td>
-                    <td>
-                        <p>  <label> Produtos Vendidos:</label> <br>
-                            <select name="idProdAdquirido" size="10">
-                                <% for (ItensVenda lista : listaItens) {%>
-                                <option  value="<%= lista.getCodItemVenda() %>"><%= lista.getCodProduto().getNomeProduto()%> Qde: <%= lista.getQuantidadeVenda()%> R$: <%= lista.getValorVendaProduto()%></option>
-                                <% } %>
-                            </select>
-                        <input type="button" value="Remover" name="remover" onclick="enviar('remover')" />
-                        </p>
-                    </td>
-                </tr>
+                        <p class="p-select">  <label> Funcionario:</label> 
+                        <select name="codFuncionario">
+                            <% for (Funcionario lista : listaFuncionario) { %>
+                            <% if (CodFuncionario.equals(String.valueOf(lista.getCodFuncionario()))) {%>
+                            <option selected value="<%= lista.getCodFuncionario()%>"><%= lista.getNomeFuncionario()%></option>
+                            <%} else {%>
+                            <option  value="<%= lista.getCodFuncionario()%>"><%= lista.getNomeFuncionario()%></option>
+                            <% }%>
+                            <% }%>
+                        </select></p>
 
-            </table>
+                    <p class="p-data">  <label> Data:</label>   <input type="text" name="dataVendaProduto" value="<%= (dataVendaProduto == null) ? "" : dataVendaProduto%>" size="10" /></p>
+                    
+                        <% if (!codVenda.equals("0")) { %>
+                    <table border="0" cellspacing="3" cellpadding="3">
+                        <tr>
+                            <td>
+                                <p class="p-lista">  <label> Lista de Produtos:</label> <br>
+                                    <select name="codProduto" size="10">
+                                        <% for (Produto lista : listaProduto) {%>
+                                        <option  value="<%= lista.getCodProduto()%>"><%= lista.getNomeProduto()%> R$: <%= lista.getValorProduto()%></option>
+                                        <% } %>
+                                    </select></p>
+                            </td>
+                            <td>
+                                Quant.<br>
+                                <input type="text" name="quantidadeVenda" value="1"  size="2" /><br><br>
+                                
+                                <input type="button" value="Vender" class="btn-alterar" name="vender" onclick="enviar('vender')" />
+                            </td>
+                            <td>
+                                <p class="p-lista">  <label> Produtos Vendidos:</label> <br>
+                                    <select name="idProdAdquirido" size="10">
+                                        <% for (ItensVenda lista : listaItens) {%>
+                                        <option  value="<%= lista.getCodItemVenda() %>"><%= lista.getCodProduto().getNomeProduto()%> Qde: <%= lista.getQuantidadeVenda()%> R$: <%= lista.getValorVendaProduto()%></option>
+                                        <% } %>
+                                    </select>
+                                <input type="button" value="Remover" class="btn-excluir" name="remover" onclick="enviar('remover')" />
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <% } %>
+                    <% if (codVenda.equals("0")) { %>
+                    <input type="button" class="btn-cadastrar" value="Cadastrar" name="cadastrar" onclick="enviar('cadastrar')" />
+                    <% } %>
 
+                    <% if (!codVenda.equals("0")) { %>
+                    <input type="button" class="btn-cadastrar" value="Finalizar" name="finalizar" onclick="enviar('finalizar')"/>
+                    <br>
+                    <input type="button" value="Cancelar" class="btn-cancelar" name="cancelar" onclick="enviar('cancelar')"/>
+                    <% }%>
+                </p>
+                <p><textarea name="mensagem" rows="2" cols="60">
+                        <%= (mensagem == null) ? "" : mensagem%></textarea></p>
 
-
-
-
-            <% } %>
-            <% if (codVenda.equals("0")) { %>
-            <input type="button" value="Cadastrar" name="cadastrar" onclick="enviar('cadastrar')" />
-            <% } %>
-
-            <% if (!codVenda.equals("0")) { %>
-            <input type="button" value="Finalizar" name="finalizar" onclick="enviar('finalizar')"/>
-            <input type="button" value="Cancelar" name="cancelar" onclick="enviar('cancelar')"/>
-            <% }%>
-
-        </p>
-        <p><textarea name="mensagem" rows="2" cols="60">
-                <%= (mensagem == null) ? "" : mensagem%></textarea></p>
-
-        <input type="hidden" name="opcao" />
-        <input type="hidden" name="codVenda" value="<%= codVenda%>"/>
-      </form> 
-
-
-</body>
+                <input type="hidden" name="opcao" />
+                <input type="hidden" name="codVenda" value="<%= codVenda%>"/>
+            </form>
+        </div>
+    </section> 
+    <%@include file="footer.jsp" %>
+    </body>
+    <script src="./static/js/index.js" ></script>
 </html>

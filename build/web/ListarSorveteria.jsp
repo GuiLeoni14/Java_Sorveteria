@@ -14,10 +14,10 @@
 <table border="1" class="fl-table">
     <thead>
         <tr>
-            <th>C�DIGO</th>
+            <th>CODIGO</th>
             <th>FORNECEDOR</th>
-            <th>ENDERE�O</th>
-            <th>HOR�RIO DE FUNCIONAMENTO</th>
+            <th>ENDERECO</th>
+            <th>HORARIO DE FUNCIONAMENTO</th>
             <th>EMAIL</th>
             <th>TELEFONE</th>
             <th>ALTERAR</th>

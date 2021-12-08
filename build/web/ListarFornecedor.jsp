@@ -10,13 +10,13 @@
     DAOFornecedor daoFornecedor = new DAOFornecedor();
     List<Fornecedor> listaFornecedor = daoFornecedor.listar();
 %>
-<table border="1">
+<table border="1" class="fl-table">
     <thead>
         <tr>
-            <th>CÓDIGO</th>
+            <th>CODIGO</th>
             <th>FORNECEDOR</th>
-            <th>ENDEREÇO</th>
-            <th>HORÁRIO DE FUNCIONAMENTO</th>
+            <th>ENDERECO</th>
+            <th>HORARIO DE FUNCIONAMENTO</th>
             <th>EMAIL</th>
             <th>TELEFONE</th>
             <th>ALTERAR</th>

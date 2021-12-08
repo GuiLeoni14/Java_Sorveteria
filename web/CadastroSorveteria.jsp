@@ -95,8 +95,8 @@
                 <h1>Cadastro sorveteria</h1>
                 <form name="cadastro" >
                     <p>  <label>Sorveteria: </label>    <input type="text" name="nomeSorveteria" value="<%= (nomeSorveteria==null)?"":nomeSorveteria %>" size="50" /></p>
-                    <p>  <label>Endere�o: </label>    <input type="text" name="enderecoSorveteria" value="<%= (enderecoSorveteria==null)?"":enderecoSorveteria %>" size="50" /></p>
-                    <p>  <label>Hor�rio de Fucionamento: </label>    <input type="text" name="horarioFuncionamentoSorveteria" value="<%= (horarioFuncionamentoSorveteria==null)?"":horarioFuncionamentoSorveteria %>" size="50" /></p>
+                    <p>  <label>Endereco: </label>    <input type="text" name="enderecoSorveteria" value="<%= (enderecoSorveteria==null)?"":enderecoSorveteria %>" size="50" /></p>
+                    <p>  <label>Horario de Fucionamento: </label>    <input type="text" name="horarioFuncionamentoSorveteria" value="<%= (horarioFuncionamentoSorveteria==null)?"":horarioFuncionamentoSorveteria %>" size="50" /></p>
                     <p>  <label>Email: </label>    <input type="text" name="emailSorveteria" value="<%= (emailSorveteria==null)?"":emailSorveteria %>" size="50" /></p>
                     <p>  <label>Telefone: </label>    <input type="text" name="telefoneSorveteria" value="<%= (telefoneSorveteria==null)?"":telefoneSorveteria %>" size="50" /></p>
                                         <div class="buttons-form">
@@ -123,6 +123,7 @@
                 <%@include file="ListarSorveteria.jsp" %>
             </div>
         </section>
-        <script src="./static/js/index.js" ></script>
+        <%@include file="footer.jsp" %>
     </body>
+    <script src="./static/js/index.js" ></script>
 </html>

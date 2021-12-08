@@ -196,6 +196,7 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
 
 .s-home{
     padding-top: 12rem;
+    min-height: 100vh;
     background: linear-gradient(180deg, #6200ff 0%, #6958af 100%);
 }
 
@@ -271,6 +272,7 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
 .s-cadastro{
     background: linear-gradient(180deg, #6200ff 0%, #6958af 100%);
     padding-top: 12rem;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -334,7 +336,7 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
     margin-top: 2rem;
 }
 .fl-table {
-    margin-top: 10rem;
+    margin: 10rem 0rem;
     border-radius: 5px;
     font-size: 12px;
     font-weight: normal;
@@ -545,7 +547,7 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
 }
 
 .s-sobe{
-    padding-top: 10rem;
+    padding: 10rem 0rem;
 }
 
 /* .s-sobe .container .main-sobre{
@@ -694,6 +696,38 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
 .s-contato .container .text .btn-primary{
     
 }
+
+.p-select{
+    align-self: flex-start;
+    max-width: 30rem;
+}
+
+.p-select select{
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color:#9781db;
+    font-size: 2rem;
+}
+
+.p-data{
+    align-self: flex-end;
+    max-width: 30rem;
+}
+
+.p-lista label{
+    margin-left: 1rem;
+}
+
+.p-lista select{
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 0.7rem;
+    background-color: #9781db;
+}
+.form-compra{
+
+}
+
 /* Footer */
 /* line 1, ../ajustar footer/scss/main.scss */
 footer {

@@ -13,7 +13,7 @@
 <table border="1" class="fl-table">
     <thead>
         <tr>
-            <th>C�DIGO</th>
+            <th>CODIGO</th>
             <th>PRODUTO</th>
             <th>ESTOQUE</th>
             <th>VALOR</th>

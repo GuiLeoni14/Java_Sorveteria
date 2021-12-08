@@ -104,6 +104,7 @@
                 <%@include file="ListarProduto.jsp" %>    
             </div>
         </section>
-        <script src="./static/js/index.js" ></script>
+        <%@include file="footer.jsp" %> 
     </body>
+    <script src="./static/js/index.js" ></script>
 </html>

@@ -106,7 +106,7 @@
                 <h1>Cadastro Cliente</h1>
                 <form name="cadastro" >
                     <p>  <label>Cliente: </label>    <input type="text" name="nomeCliente" value="<%= (nomeCliente==null)?"":nomeCliente %>" size="50" /></p>
-                    <p>  <label>Endereço: </label>    <input type="text" name="enderecoCliente" value="<%= (enderecoCliente==null)?"":enderecoCliente %>" size="50" /></p>            
+                    <p>  <label>Endereco: </label>    <input type="text" name="enderecoCliente" value="<%= (enderecoCliente==null)?"":enderecoCliente %>" size="50" /></p>            
                     <p>  <label>Email: </label>    <input type="text" name="emailCliente" value="<%= (emailCliente==null)?"":emailCliente %>" size="50" /></p>
                     <p>  <label>Telefone: </label>    <input type="text" name="telefoneCliente" value="<%= (telefoneCliente==null)?"":telefoneCliente %>" size="50" /></p>
                     <p>  <label>CPF: </label>    <input type="text" name="cpfCliente" value="<%= (cpfCliente==null)?"":cpfCliente %>" size="50" /></p>
@@ -136,6 +136,7 @@
                 <%@include file="ListarCliente.jsp" %>
             </div>
         </section>
-        <script src="./static/js/index.js" ></script>
+        <%@include file="footer.jsp" %>
     </body>
+    <script src="./static/js/index.js" ></script>
 </html>
