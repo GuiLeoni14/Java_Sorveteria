@@ -60,12 +60,13 @@ header .container nav {
     justify-content: space-between;
 }
 
-header .container nav .btn-primary{
-    margin-left: 18rem;
-}
+/* header .container nav #login{
+    margin-left: 10rem;
+} */
 
 header .container nav .ul-main{
     display: flex;
+    margin-right: 10rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -90,6 +91,15 @@ header .container nav .ul-main #btnCadastro{
 }
 header .container nav .ul-main li:not(:first-child){
     margin-left: 8rem;
+}
+
+#login span{
+    background-color: #431386;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
 }
 
 .fixed-menu{
@@ -724,8 +734,73 @@ header .container nav .ul-main .ul-cadastros li:not(:first-child){
     border-radius: 0.7rem;
     background-color: #9781db;
 }
-.form-compra{
 
+.s-login{
+    width: 100%;
+    background: linear-gradient(180deg, #6200ff 0%, #6958af 100%);
+}
+
+.s-login .container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-login form{
+    width: 100%;
+    box-shadow: -1.5rem 1.5rem 2rem #000;
+    border-radius: 1rem;
+    background-color: #dfaf20;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 40rem;
+}
+
+.s-login form label{
+    font-size: 3rem;
+}
+
+.s-login form input{
+    width: 100%;
+    transition: all .3s;
+    padding: 0.5rem;
+    font-size: 3rem;
+    height: 5rem;
+    border-radius: 0.8rem;
+    background-color: #d9d2ee;
+}
+
+.s-login form input:focus, .s-login form input::selection{
+    background-color: #9781db;
+}
+
+.s-login form #email{
+    margin-bottom: 3rem;
+}
+.s-login form .btn-primary{
+    max-width: 10rem;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+    background-color: #673de6;
+}
+.s-login form #senha{
+    margin-bottom: 1rem;
+}
+.s-login form .msg-login{
+    align-self: center;
+    text-transform: uppercase;
+    padding: 2rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    font-size: 2rem;
+    border: 3px solid #690707;
+    background-color: #f3a7a7;
+    color: #690707;
 }
 
 /* Footer */

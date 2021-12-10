@@ -51,7 +51,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a href="/Sorveteria/CadastroProduto.jsp" target="_blank">
+                        <a href="/Sorveteria/RelatorioProduto.jsp" target="_blank">
                         <strong>Relatorio Produtos</strong>
                         <p>Relatorio de Produtos</p>
                         </a>
@@ -83,7 +83,7 @@
                 </div>
                 <ul class="ul-main">
                     <li>
-                        <a href="/Sorveteria/index.jsp">Home</a>
+                        <a href="/Sorveteria/home.jsp">Home</a>
                     </li>
                     <li>
                         <a href="" id="btnCadastro">Cadastro</a>
@@ -98,7 +98,14 @@
                         <a href="#sobre">Sobre</a>
                     </li>
                 </ul>
-                <a href="" class="btn btn-primary">login</a>
+                <% if (session.getAttribute("nome") != null) {%>
+                    <div id="login">
+                        <span>Bem Vindo, <%= session.getAttribute("nome")%></span>
+                        <a href="logoff.jsp" class="btn btn-primary">Sair</a>
+                    </div>
+                <% }else{ %>
+                    <a href="index.jsp" class="btn btn-primary">login</a>
+                <%}%>
             </nav>
         </div>
     </header>

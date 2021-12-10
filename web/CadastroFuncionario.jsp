@@ -128,6 +128,7 @@ List<Sorveteria> listaSorveteria = daoSorveteria.listar();
     </head>
     <body>
         <%@include file="header.jsp" %>
+        <% if (session.getAttribute("nome") != null){%>
         <section class="s-cadastro">
             <div class="container">
                 <h1>Cadastro Funcion�rio</h1>
@@ -177,6 +178,11 @@ List<Sorveteria> listaSorveteria = daoSorveteria.listar();
                 <%@include file="ListarFuncionario.jsp" %>        
             </div>
         </section>
+        <% } else {%>
+        <jsp:forward page="index.jsp">
+        <jsp:param name="mensagem" value="Acesso negado, efetue seu login!"/>
+        </jsp:forward>
+        <% } %>
         <%@include file="footer.jsp" %>  
     </body>
     <script src="./static/js/index.js" ></script>

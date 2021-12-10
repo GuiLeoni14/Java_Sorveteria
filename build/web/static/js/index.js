@@ -13,8 +13,8 @@ function openDropdown(event){
 function scrollToSection(event){
     const url = window.location.href;
     const href = event.currentTarget.getAttribute('href');
-    if (!(url.includes('index.jsp')) && (href == '#sobre')){
-        window.location.href = '/Sorveteria/index.jsp';
+    if (!(url.includes('home.jsp')) && (href == '#sobre')){
+        window.location.href = '/Sorveteria/home.jsp';
     }else{
         const section = document.querySelector(href);
         const positionInicialSection = section.offsetTop;
